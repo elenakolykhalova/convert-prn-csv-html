@@ -1,0 +1,26 @@
+{{define "users"}}
+<table class="table table-bordered table-hover table-condensed">
+    <thead>
+    <tr>
+        <th title="Field #1">Name</th>
+        <th title="Field #2">Address</th>
+        <th title="Field #3">Postcode</th>
+        <th title="Field #4">Mobile</th>
+        <th title="Field #5">Limit</th>
+        <th title="Field #6">Birthday</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{range .}}
+    <tr>
+        <td>{{.Name}}</td>
+        <td>{{.Address}}</td>
+        <td>{{.Postcode}}</td>
+        <td>{{.Mobile}}</td>
+        <td>{{.Limit}}</td>
+        <td>{{.Birthday}}</td>
+    </tr>
+    {{end}}
+    </tbody>
+</table>
+{{end}}
